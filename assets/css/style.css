@@ -11,25 +11,50 @@ body {
 .circle {
     background-color: white;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     box-shadow: 0, 0, 4px, 4px;
 }
 
 nav {
     background-color: white;
     box-shadow: 4px;
-    justify-content: center;
-    font-size: 40px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-p {
+#name {
+    font-size: 40px;
+    float: right;
+}
+
+#about {
     text-align: center;
     max-width: fit-content;
     height: 100px;
-    position: absolute;
     clear: right;
+}
+
+ul {
+    font-size: 24px;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-flex;
+    float: left;
+
+}
+
+li a {
+    display:block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 img {
