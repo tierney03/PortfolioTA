@@ -8,32 +8,31 @@ body {
     margin: 5px;
 }
 
-.circle {
-    background-color: white;
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0, 0, 4px, 4px;
+h1 {
+    padding-left: 30px;
+    font-size: 30px;
 }
 
+p {
+    text-align:center;
+}
+
+/*Header and Nav Bar*/
 nav {
     background-color: white;
-    box-shadow: 4px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 2px;
+    border-color:black;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+
 
 #name {
     font-size: 40px;
     float: right;
-}
-
-#about {
-    text-align: center;
-    max-width: fit-content;
-    height: 100px;
-    clear: right;
 }
 
 ul {
@@ -57,10 +56,12 @@ li a {
     text-decoration: none;
 }
 
+/*Image*/
 img {
     height: 200px;
     width: 150px;
     float: right;
+    border: black;
 }
 
 hr {
@@ -71,4 +72,6 @@ hr {
 .footer {
     text-align: right;
     font-size: 20px;
+    display: block;
+    padding: auto;
 }
