@@ -8,13 +8,51 @@ body {
     margin: 5px;
 }
 
+.background {
+    background-image: url("assets/images/josh-calabrese-XXpbdU_31Sg-unsplash.jpg");
+    width: 100%;
+    height: 100%;
+    opacity: 25%;
+    z-index: -1;
+}
+
 h1 {
-    padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 30px;
+    background-color: white;
+    max-width:max-content;
+    box-shadow: 10px 10px;
 }
 
 p {
     text-align:center;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom; 20px;
+    border-style: double;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.about {
+    max-width: 500px
+}
+
+/*Image*/
+img {
+    height: 300px;
+    width: 250px;
+    padding-bottom: 20px;
+    border-radius: 20px 50px 20px 5px;
 }
 
 /*Header and Nav Bar*/
@@ -54,14 +92,6 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-/*Image*/
-img {
-    height: 200px;
-    width: 150px;
-    float: right;
-    border: black;
 }
 
 hr {
