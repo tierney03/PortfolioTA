@@ -3,24 +3,26 @@
 }
 
 body {
-    background-color: #a3cb90;
     padding: auto;
     margin: 5px;
+    background-color: antiquewhite;
 }
 
+/*
 .background {
-    background-image: url("assets/images/josh-calabrese-XXpbdU_31Sg-unsplash.jpg");
+    background-image: url(../images/josh-calabrese-XXpbdU_31Sg-unsplash.jpg);
     width: 100%;
     height: 100%;
-    opacity: 25%;
-    z-index: -1;
-}
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 
 h1 {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 30px;
-    background-color: white;
+    background-color: rgb(165, 195, 165);
     max-width:max-content;
     box-shadow: 10px 10px;
 }
@@ -34,6 +36,7 @@ section {
     padding-bottom; 20px;
     border-style: double;
     margin-bottom: 30px;
+    background-color: rgb(165, 195, 165);  
 }
 
 .container {
@@ -48,16 +51,34 @@ section {
 }
 
 /*Image*/
+
 img {
-    height: 300px;
-    width: 250px;
-    padding-bottom: 20px;
-    border-radius: 20px 50px 20px 5px;
+    max-height: 200px;
+    max-width: 200px;
+    margin-bottom: 20px;
+    border: solid black 2px;
+}
+.me {
+}
+
+.work {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
 }
 
 /*Header and Nav Bar*/
 nav {
-    background-color: white;
+    background-color: rgb(246, 239, 230);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,7 +105,6 @@ ul {
 li {
     display: inline-flex;
     float: left;
-
 }
 
 li a {
